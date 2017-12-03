@@ -1,0 +1,22 @@
+{
+  "name": "notes-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Mead",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hbs": "^4.0.0",
+    "lodash": "^4.13.1",
+    "nodemon": "^1.12.1",
+    "request": "^2.83.0",
+    "save": "^2.3.1",
+    "server": "^1.0.4",
+    "yargs": "^4.7.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
