@@ -29,6 +29,13 @@ app.get('/', (req, res) => {
   });
   */
 
+  app.get('/projects', (req, res) => {
+    res.render("projects.hbs", {
+      pageTitle: "Projects page",
+      bodycontent:  "Here's a list of projects"
+    });
+  });
+
 
 app.use((req, res, next) => {
   res.render("maintenance.hbs", {
@@ -41,6 +48,10 @@ app.get('/about', (req, res) => {
     pageTitle: 'About page',
     currentYear:  new Date().getFullYear()
   });
+});
+
+
+
 
   //res.send('about page');
   /*
@@ -58,7 +69,6 @@ app.get('/about', (req, res) => {
     }
   });
   */
-});
 
 app.get('/bad', (req, res)=> {
   res.send({
